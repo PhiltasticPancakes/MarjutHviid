@@ -1,53 +1,46 @@
-
-function menu_toggle(x) {
-  x.classList.toggle("change")
-  var vis =document.getElementById("menu").style.visibility
-  if (vis=="visible"){
-    document.getElementById("menu").style.visibility="hidden"
-  }
-  else {
-    document.getElementById("menu").style.visibility="visible"
-  }
-}
-
-
 var images= [
   {
-    name: "project 1",
+    name: "JR House",
     pic: "url('image1.jpg')",
     link: "#",
-    type: "project"
+    type: "Project"
   },
   {
-    name: "project 2",
+    name: "Dahua",
     pic: "url('image2.jpg')",
     link: "#",
-    type: "project"
+    type: "Project"
   },
   {
-    name: "Item 1",
+    name: "Geneve",
     pic: "url('image3.jpg')",
     link: "#",
-    type: "item"
+    type: "Project"
   },
   {
-    name: "Item 2",
+    name: "Project",
     pic: "url('image4.jpg')",
     link: "#",
-    type: "item"
+    type: "Project"
   }
 
 ]
 
-var i = 1
-var btn="cb1"
-function changeSlide(x) {
-  document.getElementById(btn).style.backgroundColor="";
-  i = Math.abs(x-1%4);
-  btn="cb"+(i+1);
-  document.getElementById("slideshow").style.backgroundImage=images[i].pic;
-  document.getElementById("product_title").innerHTML=images[i].name;
-  document.getElementById("product_link").innerHTML="go to " + images[i].type;
-  document.getElementById("product_link").href=images[i].link;
-  document.getElementById(btn).style.backgroundColor="white";
-}
+
+$(document).ready(function(){
+  $(".menu_button_container").click(function(){
+    $(".menu").toggle();
+  });
+
+  $(".circle_button").click(function(){
+    var btn = $(this).attr('id').slice(-1);
+    var b = btn % 4;
+    $(".circle_button").removeClass("active_button").addClass("inactive_button");
+    $("#cb" + b).removeClass("inactive_button").addClass("active_button");
+    $('.slide:visible').fadeOut(500);
+    $(".slide_" + (b)).fadeIn(500);
+    $("#product_title").html(images[b]["name"]);
+    $("#product_link").attr("href", images[b]["link"]);
+    $("#product_link").html("Go to " + images[b]["type"]);
+  });
+});

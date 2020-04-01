@@ -3,22 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Marjut White</title>
-    <script src="HomePage.js"></script>
     <script src="C:\Users\s183747\Desktop\MarjutHviid\jquery-3.4.1.js"></script>
+    <script src="HomePage.js"></script>
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <link rel="stylesheet" href="HomePage.css">
   </head>
   <body>
     <header>
-      <div class="menu_button_container" onclick="menu_toggle(this)">
-        <div class="menu_bar bar1"></div>
-        <div class="menu_bar bar2"></div>
-        <div class="menu_bar bar3"></div>
+      <div class="header_upper">
+        <div class="menu_button_container">
+          <div class="menu_bar bar1"></div>
+          <div class="menu_bar bar2"></div>
+          <div class="menu_bar bar3"></div>
+        </div>
+        <a class="page_title" href="file:///C:/Users/s183747/Desktop/MarjutHviid/HomePage.html"><h1 class="title_upper">Marjut White</h1> <h1 class="title_lower">Interior Design</h1> </a>
       </div>
-
-      <a class="page_title" href="file:///C:/Users/s183747/Desktop/MarjutHviid/HomePage.html"><h1 class="title_upper">Marjut White</h1> <h1 class="title_lower">Interior Design</h1> </a>
-
-      <nav id="menu" class="hidden">
+      <nav class="menu">
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Me</a></li>
@@ -32,6 +32,18 @@
 
     <main>
       <div  id="slideshow" class="slideshow_wrapper">
+        <div class="slide slide_0">
+        </div>
+
+        <div class="slide slide_1">
+        </div>
+
+        <div class="slide slide_2">
+        </div>
+
+        <div class="slide slide_3">
+        </div>
+
         <div class="side_button_wrapper left_button">
           <div class="side_arrow left_arrow" onclick=" ">
 
@@ -44,18 +56,18 @@
         </div>
 
         <div class="slider_info_wrapper">
-            <h2 id="product_title">Project Name</h2>
-            <a id="product_link" href="#">Go to Project</a>
+            <h2 id="product_title"> Project </h2>
+            <a id="product_link" href="#">Link</a>
         </div>
         <div class="circle_button_container">
-          <div id="cb1" class="circle_button" onclick="changeSlide(1)">
-          </div>
-          <div id="cb2" class="circle_button" onclick="changeSlide(2)">
-          </div>
-          <div id="cb3" class="circle_button" onclick="changeSlide(3)">
-          </div>
-          <div id="cb4" class="circle_button" onclick="changeSlide(4)">
-          </div>
+          <button id="cb0" class="circle_button inactive_button">
+          </button>
+          <button id="cb1" class="circle_button inactive_button">
+          </button>
+          <button id="cb2" class="circle_button inactive_button">
+          </button>
+          <button id="cb3" class="circle_button inactive_button">
+          </button>
         </div>
       </div>
     </main>
