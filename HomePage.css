@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  z-index: 0;
   height: 100%;
   padding: 20px;
   padding-top: 0px;
@@ -104,6 +103,7 @@ nav {
 .slide_wrapper {
   height: 100%;
   width: 100%;
+
 }
 
 
@@ -138,11 +138,11 @@ main {
   height: 100%;
   width: 100%;
   padding-top: 70px;
+
 }
 
 .slideshow_wrapper {
   height: 100%;
-  box-sizing: border-box;
 }
 
 .slide {
@@ -152,32 +152,30 @@ main {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: none;
+  top: 0;
+  left: 0;
 }
 
 .slide_0 {
   z-index: 1;
   background-image: url("JR_House.jpg");
-  top: 0;
-  left: 0;
+
 
 }
 .slide_1 {
   z-index: 2;
   background-image: url("Dahua.jpg");
-  top: 0;
-  left: 0;
+
 }
 .slide_2 {
   z-index: 3;
   background-image: url("Geneve.png");
-  top: 0;
-  left: 0;
+
 }
 .slide_3 {
   z-index: 4;
   background-image: url("project.jpg");
-  top: 0;
-  left: 0;
+
 }
 
 .side_button_wrapper {
@@ -235,7 +233,7 @@ main {
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
-  color: #fff;
+  color: #333;
   position: relative;
   z-index: 10;
 }
