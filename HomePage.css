@@ -131,13 +131,12 @@ nav {
 
 main {
   box-sizing: border-box;
-  position: relative;
-  top: -100px;
-  left: 0;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
   z-index: 0;
-  height: 100%;
-  width: 100%;
-  padding-top: 70px;
 
 }
 
@@ -174,7 +173,7 @@ main {
 }
 .slide_3 {
   z-index: 4;
-  background-image: url("project.jpg");
+  background-image: url("Golf_house_sketch.jpg");
 
 }
 
@@ -272,7 +271,7 @@ main {
 }
 
 .active_button {
-  background-color: White;
+  background-color: #333;
   transition: 0.4s;
 }
 
