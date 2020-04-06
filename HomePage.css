@@ -177,22 +177,6 @@ main {
 
 }
 
-.side_button_wrapper {
-  z-index: 15;
-  position: absolute;
-  height: 20%;
-  width: 7%;
-  bottom: 40%;
-
-}
-
-.left_button {
-  left: 0px;
-}
-
-.right_button{
-  right: 0px;
-}
 
 .side_arrow {
   position: absolute;
@@ -207,11 +191,11 @@ main {
 
 .left_arrow {
   transform: rotate(135deg);
-  left: 50%;
+  left: 0;
 }
 
 .right_arrow {
-  right: 50%;
+  right: 0;
   transform: rotate(-45deg);
 }
 

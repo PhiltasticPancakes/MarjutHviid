@@ -23,8 +23,32 @@ var images= [
     link: "#",
     type: "Project"
   }
-
 ]
+
+var n = -1;
+
+var autoChange = setInterval(nextSlide,5000);
+
+function changeSlide(){
+  clearInterval(autoChange)
+  if (n<0) {n=3}
+  else if (n>3) {n=0};
+  $(".circle_button").removeClass("active_button").addClass("inactive_button");
+  $("#cb" + n).removeClass("inactive_button").addClass("active_button");
+  $('.slide:visible').fadeOut(400);
+  $(".slide_" + (n)).fadeIn(700);
+  $("#product_title").html(images[n]["name"]);
+  $("#product_link").attr("href", images[n]["link"]);
+  $("#product_link").html("Go to " + images[n]["type"]);
+  autoChange = setInterval(nextSlide,5000);
+
+
+};
+
+function nextSlide(){
+  n++;
+  changeSlide()
+};
 
 
 $(document).ready(function(){
@@ -33,14 +57,16 @@ $(document).ready(function(){
   });
 
   $(".circle_button").click(function(){
-    var btn = $(this).attr('id').slice(-1);
-    var b = btn % 4;
-    $(".circle_button").removeClass("active_button").addClass("inactive_button");
-    $("#cb" + b).removeClass("inactive_button").addClass("active_button");
-    $('.slide:visible').fadeOut(500);
-    $(".slide_" + (b)).fadeIn(500);
-    $("#product_title").html(images[b]["name"]);
-    $("#product_link").attr("href", images[b]["link"]);
-    $("#product_link").html("Go to " + images[b]["type"]);
+    n = $(this).attr('id').slice(-1);
+    changeSlide();
+  });
+
+  $(".right_arrow").click(function() {
+    nextSlide();
+  });
+
+  $(".left_arrow").click(function() {
+    n--;
+    changeSlide();
   });
 });
