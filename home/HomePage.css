@@ -15,118 +15,11 @@ body {
   padding-top: 0px;
 }
 
-header {
-  position: relative;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100px;
-  z-index: 5;
-  text-align: center;
-
-}
-
-nav {
-  height: 30px;
-  background-color: white;
-  display: none;
-}
-.header_upper {
-  background-color: white;
-  z-index: 15;
-  width: 100%;
-  height: 70px;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-links li a {
-  font-family: verdana;
-  color: black;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.menu_button_container {
-  display: inline-block;
-  position: absolute;
-  left: 0px;
-  top: 5px;
-  z-index: 5;
-  width: 52px;
-  height: 50px;
-  cursor: pointer;
-
-}
-
-.menu_bar {
-  position: absolute;
-  width: 90%;
-  height: 15%;
-  border-radius: 8px;
-  background-color: #333;
-  margin: 0 0;
-  transition: 0.4s;
-  left: 2px;
-
-}
-
-.bar1 {
-  top: 18%;
-}
-
-.bar2 {
-  top: 48%;
-}
-
-.bar3 {
-  top: 78%;
-}
-
-.menu_button_container.change .bar1 {
-  transform: rotate(-45deg);
-  top: 48%;
-}
-
-.change .bar2 {opacity: 0;}
-
-.menu_button_container.change .bar3 {
-  transform: rotate(45deg);
-  top: 48%;
-}
-
 .slide_wrapper {
   height: 100%;
   width: 100%;
 
 }
-
-
-.page_title {
-  margin-top: 5px;
-  display: inline-block;
-  text-decoration: none;
-  font-family: Arial;
-  color: #2a2a2a;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 500;
-}
-
-.title_upper {
-  font-size: 1.9rem;
-}
-
-.title_lower {
-  font-size: 1.2rem;
-}
-
-
 
 
 main {
@@ -157,23 +50,23 @@ main {
 
 .slide_0 {
   z-index: 1;
-  background-image: url("JR_House.jpg");
+  background-image: url("../Images/JR_House.jpg");
 
 
 }
 .slide_1 {
   z-index: 2;
-  background-image: url("Dahua.jpg");
+  background-image: url("../Images/Dahua.jpg");
 
 }
 .slide_2 {
   z-index: 3;
-  background-image: url("Geneve.png");
+  background-image: url("../Images/Geneve.png");
 
 }
 .slide_3 {
   z-index: 4;
-  background-image: url("Golf_house_sketch.jpg");
+  background-image: url("../Images/Golf_house_sketch.jpg");
 
 }
 
@@ -191,11 +84,11 @@ main {
 
 .left_arrow {
   transform: rotate(135deg);
-  left: 0;
+  left: 25px;
 }
 
 .right_arrow {
-  right: 0;
+  right: 25px;
   transform: rotate(-45deg);
 }
 

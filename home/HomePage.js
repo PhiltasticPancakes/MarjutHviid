@@ -52,10 +52,6 @@ function nextSlide(){
 
 
 $(document).ready(function(){
-  $(".menu_button_container").click(function(){
-    $(".menu").toggle();
-  });
-
   $(".circle_button").click(function(){
     n = $(this).attr('id').slice(-1);
     changeSlide();
