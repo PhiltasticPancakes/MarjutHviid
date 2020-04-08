@@ -35,8 +35,8 @@ function changeSlide(){
   else if (n>3) {n=0};
   $(".circle_button").removeClass("active_button").addClass("inactive_button");
   $("#cb" + n).removeClass("inactive_button").addClass("active_button");
-  $('.slide:visible').fadeOut(400);
-  $(".slide_" + (n)).fadeIn(700);
+  $('.slide:visible').fadeOut(300);
+  $(".slide_" + (n)).fadeIn(300);
   $("#product_title").html(images[n]["name"]);
   $("#product_link").attr("href", images[n]["link"]);
   $("#product_link").html("Go to " + images[n]["type"]);

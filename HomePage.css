@@ -256,10 +256,10 @@ main {
 
 .active_button {
   background-color: #333;
-  transition: 0.4s;
+  transition: 0.7s;
 }
 
 .inactive_button {
   background-color: Transparent;
-  transition: 0.4s;
+  transition: 0.7s;
 }
