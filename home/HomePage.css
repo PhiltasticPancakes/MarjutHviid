@@ -1,71 +1,30 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  height: 100%;
-  padding: 20px;
-  padding-top: 0px;
-}
-
-.slide_wrapper {
-  height: 100%;
-  width: 100%;
-
-}
-
-
-main {
-  box-sizing: border-box;
-  position: absolute;
-  top: 70px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  z-index: 0;
-
-}
-
-.slideshow_wrapper {
-  height: 100%;
-}
-
 .slide {
-  height: 100%;
+  box-sizing: border-box;
+  height: 98%;
   width: 100%;
   position: absolute;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: none;
-  top: 0;
+  top: 1%;
   left: 0;
+  z-index: -5;
 }
 
 .slide_0 {
-  z-index: 1;
   background-image: url("../Images/JR_House.jpg");
 
 
 }
 .slide_1 {
-  z-index: 2;
   background-image: url("../Images/Dahua.jpg");
 
 }
 .slide_2 {
-  z-index: 3;
   background-image: url("../Images/Geneve.png");
 
 }
 .slide_3 {
-  z-index: 4;
   background-image: url("../Images/Golf_house_sketch.jpg");
 
 }
@@ -84,11 +43,11 @@ main {
 
 .left_arrow {
   transform: rotate(135deg);
-  left: 25px;
+  left: 2%;
 }
 
 .right_arrow {
-  right: 25px;
+  right: 2%;
   transform: rotate(-45deg);
 }
 
@@ -98,7 +57,7 @@ main {
   position: absolute;
   bottom: 10%;
   left: 10%;
-  height: 80px;
+  height: auto;
 
 }
 
@@ -155,4 +114,13 @@ main {
 .inactive_button {
   background-color: Transparent;
   transition: 0.7s;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .circle_button_container {
+    display: none;
+  }
+
+
 }

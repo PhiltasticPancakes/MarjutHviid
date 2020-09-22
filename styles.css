@@ -1,29 +1,54 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
-header {
-  position: fixed;
-  left: 20px;
-  right: 20px;
-  box-sizing: border-box;
-  height: 100px;
-  z-index: 5;
-  text-align: center;
+html {
+  height: 100%;
+  width: 100%;
+}
 
+body {
+  position: absolute;
+  left: 1%;
+  right: 1%;
+  bottom: 1%;
+  top: 0;
+  display: grid;
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 27fr;
+  grid-template-areas:
+    "header"
+    "menu"
+    "main"
+}
+
+
+main {
+  position: relative;
+  grid-area: 2 / 1 / -1 / -1;
+  z-index: 0;
+
+}
+
+
+header {
+  position: relative;
+  grid-area: header;
+  text-align: center;
+  background-color: white;
+  z-index: 15;
 }
 
 nav {
-  height: 30px;
+  grid-area: menu;
   background-color: white;
   display: none;
-}
-.header_upper {
-  background-color: white;
   z-index: 15;
-  width: 100%;
-  height: 70px;
 }
+
+
 
 .nav-links {
   display: flex;
@@ -36,18 +61,19 @@ nav {
 .nav-links li a {
   font-family: verdana;
   color: black;
-  font-size: 16px;
+  font-size: 2vh;
   text-decoration: none;
 }
 
 .menu_button_container {
-  display: inline-block;
+  display: block;
   position: absolute;
-  left: 0px;
-  top: 5px;
-  z-index: 5;
-  width: 52px;
-  height: 50px;
+  left: 0;
+  bottom: 0;
+  min-width: 50px;
+  width: 4vw;
+  max-width: 100px;
+  height: 100%;
   cursor: pointer;
 
 }
@@ -58,22 +84,22 @@ nav {
   height: 15%;
   border-radius: 8px;
   background-color: #333;
-  margin: 0 0;
+  margin: 0;
   transition: 0.4s;
-  left: 2px;
+  left: 5%;
 
 }
 
 .bar1 {
-  top: 18%;
+  top: 15%;
 }
 
 .bar2 {
-  top: 48%;
+  top: 45%;
 }
 
 .bar3 {
-  top: 78%;
+  top: 75%;
 }
 
 .menu_button_container.change .bar1 {
@@ -91,20 +117,45 @@ nav {
 
 
 .page_title {
-  margin-top: 5px;
   display: inline-block;
+  height: 100%;
   text-decoration: none;
   font-family: Arial;
   color: #2a2a2a;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
+
 }
 
 .title_upper {
-  font-size: 1.9rem;
+  margin-top: 0.5vh;
+  font-size: 3vh;
 }
 
 .title_lower {
-  font-size: 1.2rem;
+  font-size: 2vh;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+  }
+  nav {
+    grid-area: 2 / 1 / -1 / -1;
+  }
+  .nav-links {
+      flex-direction: column;
+  }
+
+  .menu_button_container {
+    position: absolute;
+    left:auto;
+    right: 2vw;
+  }
 }

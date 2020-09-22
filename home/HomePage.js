@@ -18,15 +18,13 @@ var images= [
     type: "Project"
   },
   {
-    name: "Project",
+    name: "Golf House",
     pic: "url('image4.jpg')",
     link: "#",
     type: "Project"
   }
 ]
-
 var n = -1;
-
 var autoChange = setInterval(nextSlide,5000);
 
 function changeSlide(){
@@ -42,8 +40,8 @@ function changeSlide(){
   $("#product_link").html("Go to " + images[n]["type"]);
   autoChange = setInterval(nextSlide,5000);
 
-
 };
+
 
 function nextSlide(){
   n++;
@@ -52,6 +50,9 @@ function nextSlide(){
 
 
 $(document).ready(function(){
+  nextSlide();
+
+
   $(".circle_button").click(function(){
     n = $(this).attr('id').slice(-1);
     changeSlide();
@@ -65,4 +66,6 @@ $(document).ready(function(){
     n--;
     changeSlide();
   });
+
+
 });
