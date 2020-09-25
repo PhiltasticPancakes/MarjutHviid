@@ -13,7 +13,7 @@ body {
   left: 1%;
   right: 1%;
   bottom: 1%;
-  top: 0;
+  top: 1%;
   display: grid;
   grid-gap: 0;
   grid-template-columns: 1fr;

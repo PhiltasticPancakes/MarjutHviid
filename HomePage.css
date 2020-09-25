@@ -12,20 +12,20 @@
 }
 
 .slide_0 {
-  background-image: url("../Images/JR_House.jpg");
+  background-image: url("https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
 
 
 }
 .slide_1 {
-  background-image: url("../Images/Dahua.jpg");
+  background-image: url("https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-1.2.1&auto=format&fit=crop&w=1387&q=80");
 
 }
 .slide_2 {
-  background-image: url("../Images/Geneve.png");
+  background-image: url("https://images.unsplash.com/photo-1527507516-4de2af31545c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
 
 }
 .slide_3 {
-  background-image: url("../Images/Golf_house_sketch.jpg");
+  background-image: url("https://images.unsplash.com/photo-1534157458714-42b1e9cd5727?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 
 }
 
@@ -68,7 +68,7 @@
   font-style: normal;
   font-variant: normal;
   font-weight: 300;
-  color: #333;
+  color: black;
   position: relative;
   z-index: 10;
 }
